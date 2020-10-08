@@ -1,4 +1,4 @@
-module Slugifiable 
+module Slugifiable
 
   module InstanceMethods
 
@@ -6,19 +6,14 @@ module Slugifiable
       base.extend(ClassMethods)
     end
 
-    def slug 
+    def slug
       name.downcase.gsub(" ", "-")
     end
   end
 
-  module ClassMethods 
+  module ClassMethods
     def find_by_slug(slug)
       self.all.find {|artist| artist.slug == slug}
     end
   end
 end
-
-
-
-
-      
