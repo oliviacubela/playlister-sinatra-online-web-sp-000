@@ -8,6 +8,7 @@ begin
   use SongsController
   use ArtistsController
   use GenresController
+   
 rescue ActiveRecord::PendingMigrationError => err
   STDERR.puts err
   exit 1
