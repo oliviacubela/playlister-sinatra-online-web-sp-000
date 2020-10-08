@@ -1,2 +1,2 @@
-class Artist < Sinatra::Base 
+class Artist < Sinatra::Base
 end
